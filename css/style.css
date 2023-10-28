@@ -1,0 +1,612 @@
+/*!-----Reset------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*!-----Header-----*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 65px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 990;
+}
+
+header h1 span {
+    color: darkgrey;
+}
+
+header .nav-link {
+    color: white;
+}
+
+header .nav-link:hover {
+    color: darkgray;
+}
+
+header .navbar-toggler {
+    background-color: white;
+}
+
+/*!------Main-inicio-----*/
+.inicio {
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/fondo-tortas.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.445);
+    border: 2px solid white;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 990;
+    font-size: 50px;
+}
+
+.inicio p {
+    font-size: 25px;
+    font-family: 'Fuggles', cursive;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    margin: 10px;
+}
+
+/*-----Main-conocenos-----*/
+.conocenos {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.conocenos div {
+    width: 50%;
+}
+
+.conocenos div h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 40px;
+}
+
+.conocenos div p {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+.conocenos img {
+    border: 5px solid black;
+}
+
+/*------Main-productos----*/
+.productos {
+    background-color: black;
+    height: 500px;
+}
+
+.productos h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 990;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.productos .tarjetas div {
+    text-align: center;
+    border: 5px solid white;
+    padding: 5px;
+}
+
+.productos .tarjetas div h3 {
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.productos .tarjetas div img {
+    height: 300px;
+    width: 100%;
+}
+
+.productos .tarjetas div a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px 5px 5px 5px;
+}
+
+/*-----Formulario-----*/
+
+form {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(90, 89, 89);
+}
+
+footer h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+footer h2 span {
+    color: black;
+}
+
+/*-----Pseudoclases----*/
+header nav ul li a:hover {
+    color: darkgray;
+}
+
+.productos .tarjetas div a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+/*-----Pseudoelementos*/
+
+p::selection {
+    background-color: black;
+    color: white;
+}
+
+
+/*--------Header-Files------*/
+
+.header-productos h1 span {
+    color: darkgray;
+}
+
+.header-productos .nav-link {
+    color: white;
+}
+
+.header-productos .nav-link:hover {
+    color: darkgray;
+}
+
+.header-productos .navbar-toggler {
+    background-color: white;
+}
+
+/*----Productos file main------*/
+.productos-pages {
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+.productos-pages h2 {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 990;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/* Estilo para la galería de imágenes */
+.gallery {
+    height: 450px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 10px;
+}
+
+/* Estilo para las imágenes */
+.gallery .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.gallery .image img {
+    padding: 5px;
+    max-width: 400px;
+    max-height: 300px;
+    border: 5px solid #000000;
+}
+
+/*-------Tortas------*/
+
+.tortas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tortas h2 {
+    color: white;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.tortas div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border: 5px solid white;
+    padding: 5px;
+}
+
+
+.tortas div p {
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.tortas div img {
+    border: 15px solid black;
+    height: 250px;
+    width: 250px;
+}
+
+/*-----Media Query------*/
+
+@media screen and (max-width:1440px) {
+    .productos-pages{
+        height: 1050px;
+    }
+    .gallery{
+        grid-template-columns: 400px 400px 400px ;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .productos-pages{
+        height: 1050px;
+    }
+    .gallery{
+        grid-template-columns: 300px 300px 300px ;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+}
+
+
+
+@media screen and (max-width:1060px) {
+    
+    .inicio h2 {
+        font-size: 30px;
+    }
+    
+    .inicio p {
+        font-size: 15px;
+    }
+    
+    .conocenos div h2 {
+        font-size: 30px;
+    }
+    
+    .conocenos img {
+        height: 100%;
+        width: 400px;
+    }
+    
+    .productos {
+        height: 850px;
+    }
+    
+    .productos .tarjetas {
+        height: 10px;
+        width: 100%;
+    }
+    
+    .productos .tarjetas div {
+        margin: 5px;
+    }
+}
+
+
+@media screen and (max-width:920px) {
+    .productos-pages{
+        height: 1300px;
+    }
+    .gallery{
+        grid-template-columns: 300px 300px ;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+}
+
+
+@media screen and (max-width:876px) {
+    header {
+        position: static;
+    }
+
+    .inicio h2 {
+        font-size: 30px;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+
+    .conocenos div h2 {
+        font-size: 30px;
+    }
+
+    .conocenos img {
+        height: 100%;
+        width: 400px;
+    }
+
+    .productos {
+        height: 850px;
+    }
+
+    .productos .tarjetas {
+        height: 10px;
+        width: 100%;
+    }
+
+    .productos .tarjetas div {
+        margin: 5px;
+    }
+}
+
+
+@media screen and (max-width:720px) {
+
+    .inicio h2 {
+        font-size: 25px;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+
+    .conocenos div h2 {
+        font-size: 20px;
+    }
+
+    .conocenos img {
+        height: 100%;
+        width: 400px;
+    }
+
+    .productos {
+        height: 1250px;
+    }
+
+    .productos .tarjetas {
+        flex-direction: row;
+        height: 10px;
+        width: 100%;
+    }
+
+    .productos .tarjetas div {
+        margin: 5px;
+    }
+
+    form {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:595px) {
+    .inicio {
+        width: 100%;
+    }
+
+    .inicio h2 {
+        font-size: 25px;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+
+    .conocenos div h2 {
+        font-size: 20px;
+    }
+
+    .conocenos div p {
+        font-size: 15px;
+    }
+
+    .conocenos img {
+        height: 100%;
+        width: 400px;
+    }
+
+    .productos {
+        height: 1250px;
+    }
+
+    .productos .tarjetas {
+        flex-direction: row;
+        height: 10px;
+        width: 100%;
+    }
+
+    .productos .tarjetas div {
+        margin: 5px;
+    }
+
+    form {
+        font-size: 8px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .productos-pages{
+        height: 2650px;
+    }
+    .gallery{
+        grid-template-columns: 400px  ;
+        grid-template-rows: 300px 300px 300px 300px;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .inicio {
+        width: 100%;
+    }
+
+    .inicio h2 {
+        font-size: 25px;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+
+    .conocenos div h2 {
+        font-size: 20px;
+    }
+
+    .conocenos div p {
+        font-size: 10px;
+    }
+
+    .conocenos img {
+        height: 275px;
+        width: 260px;
+    }
+
+    .productos {
+        height: 1250px;
+    }
+
+    .productos .tarjetas {
+        flex-direction: row;
+        height: 10px;
+        width: 100%;
+    }
+
+    .productos .tarjetas div {
+        margin: 5px;
+    }
+
+    form {
+        font-size: 5px;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .tortas div{
+        flex-direction: row;
+    }
+    .tortas div p{
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+
+@media screen and (max-width:325px) {
+    .inicio {
+        width: 100%;
+    }
+
+    .inicio h2 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+
+    .conocenos div h2 {
+        font-size: 20px;
+    }
+
+    .conocenos div p {
+        font-size: 10px;
+    }
+
+    .conocenos img {
+        height: 230px;
+        width: 215px;
+    }
+
+    .productos {
+        height: 1280px;
+    }
+
+    .productos .tarjetas {
+        flex-direction: row;
+        height: 10px;
+        width: 100%;
+    }
+
+    .productos .tarjetas div {
+        margin: 5px;
+    }
+
+    form {
+        font-size: 5px;
+        flex-direction: row;
+        align-items: start;
+    }
+}
