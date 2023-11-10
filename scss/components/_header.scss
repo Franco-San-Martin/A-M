@@ -1,0 +1,56 @@
+/*!---index-------*/
+header {
+    position: sticky;
+    top: 0;
+    background-color: $color-black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+
+    h1 {
+        color:$color-white;
+        font-size: 65px;
+        font-style: italic;
+        font-weight: 990;
+
+        span {
+            color: $color-darkgrey;
+        }
+    }
+
+    .nav-link {
+        color: $color-white;
+
+        &:hover {
+            color: $color-darkgrey;
+        }
+    }
+
+    .navbar-toggler {
+        background-color: $color-white;
+    }
+}
+
+/* Header Files */
+.header-productos {
+    h1 {
+        span {
+            color: $color-darkgrey;
+        }
+    }
+
+    .nav-link {
+        color: $color-white;
+
+        &:hover {
+            color: $color-darkgrey;
+        }
+    }
+
+    .navbar-toggler {
+        background-color: $color-white;
+    }
+    z-index: 999
+}

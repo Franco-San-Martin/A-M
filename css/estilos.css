@@ -1,0 +1,543 @@
+@charset "UTF-8";
+/*!-----Reset------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace; }
+
+p::selection {
+  background-color: #000000;
+  color: white; }
+
+/*!---index-------*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace; }
+  header h1 {
+    color: #ffffff;
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 990; }
+    header h1 span {
+      color: darkgray; }
+  header .nav-link {
+    color: #ffffff; }
+    header .nav-link:hover {
+      color: darkgray; }
+  header .navbar-toggler {
+    background-color: #ffffff; }
+
+/* Header Files */
+.header-productos {
+  z-index: 999; }
+  .header-productos h1 span {
+    color: darkgray; }
+  .header-productos .nav-link {
+    color: #ffffff; }
+    .header-productos .nav-link:hover {
+      color: darkgray; }
+  .header-productos .navbar-toggler {
+    background-color: #ffffff; }
+
+/*---index----*/
+.inicio {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/fondo-tortas.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .inicio h2 {
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.445);
+    border: 2px solid white;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 990;
+    font-size: 50px; }
+  .inicio p {
+    font-size: 25px;
+    font-family: 'Fuggles', cursive;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: #ffffff;
+    border: 2px solid white;
+    padding: 5px;
+    margin: 10px; }
+
+.conocenos {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center; }
+  .conocenos div {
+    width: 50;
+    flex-wrap: wrap; }
+    .conocenos div h2 {
+      color: #000000;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 1000;
+      font-size: 40px; }
+    .conocenos div p {
+      color: #000000;
+      font-size: 25px; }
+  .conocenos img {
+    border: 5px solid black; }
+
+/* Main-productos */
+.productos {
+  background-color: #000000;
+  height: 500px; }
+  .productos h2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 990;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .productos .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace; }
+    .productos .tarjetas div {
+      text-align: center;
+      border: 5px solid #ffffff;
+      padding: 5px; }
+      .productos .tarjetas div h3 {
+        color: #ffffff;
+        text-align: center;
+        padding-bottom: 5px;
+        font-size: 15px; }
+      .productos .tarjetas div img {
+        height: 300px;
+        width: 100%; }
+      .productos .tarjetas div a {
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 5px 5px 5px 5px; }
+        .productos .tarjetas div a:hover {
+          color: #ffffff;
+          background-color: #000000; }
+    .productos .tarjetas form {
+      display: flex;
+      margin: 5px;
+      padding: 5px; }
+
+/* Productos file main */
+.productos-pages {
+  align-items: center;
+  height: 700px;
+  margin: 0;
+  transition: transform 0.3s ease; }
+  .productos-pages h2 {
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 990;
+    padding-top: 10px;
+    padding-bottom: 0; }
+
+/* Estilo para la galería de imágenes */
+.gallery {
+  height: 450px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 400px);
+  grid-template-rows: repeat(4, 300px);
+  gap: 10px; }
+  .gallery .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+    .gallery .image:hover {
+      transform: scale(1.05); }
+    .gallery .image img {
+      padding: 5px;
+      max-width: 400px;
+      max-height: 300px;
+      border: 5px solid #000000; }
+
+/* Tortas */
+.tortas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Courier New', Courier, monospace; }
+  .tortas h2 {
+    color: #ffffff;
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+  .tortas div {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border: 5px solid white;
+    padding: 5px; }
+    .tortas div p {
+      color: #000000;
+      text-align: center;
+      padding-bottom: 5px;
+      font-size: 25px; }
+    .tortas div img {
+      border: 15px solid #000000;
+      height: 250px;
+      width: 250px; }
+
+/*Bebidas*/
+.servicios-cafe {
+  background-color: #ffffff;
+  text-align: center; }
+  .servicios-cafe h2 {
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 40px; }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #000000; }
+
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.3s ease; }
+  .item img {
+    max-width: 100%;
+    height: auto; }
+  .item h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center; }
+  .item:hover {
+    transform: scale(1.05); }
+
+.box-section {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  z-index: 0; }
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px; }
+
+.box {
+  display: flex;
+  flex-direction: row; }
+
+.image-box {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s; }
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+p {
+  margin-top: 10px; }
+
+/*Nosotros*/
+.nosotros-pages {
+  text-align: center;
+  background-color: #ffffff; }
+  .nosotros-pages h2 {
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 40px; }
+  .nosotros-pages .caja-contenedora {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid #000000; }
+    .nosotros-pages .caja-contenedora img {
+      width: 25%;
+      height: 350px;
+      transition: transform 0.3s ease-in-out; }
+    .nosotros-pages .caja-contenedora p {
+      color: #ffffff;
+      background-color: #000000;
+      padding: 10px;
+      flex: 1;
+      font-size: 25px; }
+    .nosotros-pages .caja-contenedora:hover img {
+      transform: scale(1.1); }
+    .nosotros-pages .caja-contenedora:hover .info-btn {
+      background-color: #909090; }
+  .nosotros-pages .caja-contenedora-mapa {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    border: 2px solid #000000; }
+    .nosotros-pages .caja-contenedora-mapa h3 {
+      color: #000000;
+      background-color: darkgray;
+      padding: 10px;
+      flex: 1; }
+
+/*---Index---*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: darkgray;
+  transition: transform 0.3s ease; }
+  footer h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff; }
+    footer h2 span {
+      color: #000000; }
+  footer ul:hover {
+    transform: scale(1.05); }
+
+@media screen and (max-width: 1440px) {
+  .productos-pages {
+    height: 1050px; }
+  .gallery {
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(4, 300px); } }
+
+@media screen and (max-width: 1220px) {
+  .productos-pages {
+    height: 1050px; }
+  .gallery {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 300px); } }
+
+@media screen and (max-width: 1060px) {
+  .inicio h2 {
+    font-size: 30px; }
+  .inicio p {
+    font-size: 15px; }
+  .conocenos div h2 {
+    font-size: 30px; }
+  .conocenos img {
+    height: 100%;
+    width: 400px; }
+  .productos {
+    height: 850px; }
+    .productos .tarjetas {
+      height: 10px;
+      width: 100%; }
+      .productos .tarjetas div {
+        margin: 5px; } }
+
+@media screen and (max-width: 920px) {
+  .productos-pages {
+    height: 1300px; }
+  .gallery {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(4, 300px); } }
+
+@media screen and (max-width: 876px) {
+  header {
+    position: static; }
+  .inicio h2 {
+    font-size: 30px; }
+  .inicio p {
+    font-size: 15px; }
+  .conocenos {
+    flex-wrap: wrap; }
+  .conocenos div h2 {
+    font-size: 30px; }
+  .conocenos img {
+    height: 100%;
+    width: 400px; }
+  .productos {
+    height: 850px; }
+    .productos .tarjetas {
+      height: 10px;
+      width: 100%; }
+      .productos .tarjetas div {
+        margin: 5px; } }
+
+@media (max-width: 768px) {
+  .servicios-cafe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black; }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    max-width: 100%; }
+  .item {
+    margin: 5px;
+    height: 250px;
+    width: 250px; } }
+
+@media screen and (max-width: 720px) {
+  .inicio h2 {
+    font-size: 25px; }
+  .inicio p {
+    font-size: 15px; }
+  .conocenos div h2 {
+    font-size: 20px; }
+  .conocenos img {
+    height: 100%;
+    width: 400px; }
+  .productos {
+    height: 1250px; }
+    .productos .tarjetas {
+      flex-direction: row;
+      height: 10px;
+      width: 100%; }
+      .productos .tarjetas div {
+        margin: 5px; }
+  form {
+    font-size: 10px; } }
+
+@media screen and (max-width: 650px) {
+  .box {
+    flex-direction: column; } }
+
+@media screen and (max-width: 595px) {
+  .inicio {
+    width: 100%; }
+  .inicio h2 {
+    font-size: 25px; }
+  .inicio p {
+    font-size: 15px; }
+  .conocenos div h2 {
+    font-size: 20px; }
+  .conocenos div p {
+    font-size: 15px; }
+  .conocenos img {
+    height: 100%;
+    width: 400px; }
+  .productos {
+    height: 1250px; }
+    .productos .tarjetas {
+      flex-direction: row;
+      height: 10px;
+      width: 100%; }
+      .productos .tarjetas div {
+        margin: 5px; }
+  form {
+    font-size: 8px;
+    flex-direction: row; } }
+
+@media screen and (max-width: 615px) {
+  .productos-pages {
+    height: 2650px; }
+  .gallery {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(4, 300px); } }
+
+@media screen and (max-width: 425px) {
+  .inicio {
+    width: 100%; }
+  .inicio h2 {
+    font-size: 25px;
+    padding: 5px; }
+  .inicio p {
+    font-size: 15px; }
+  .conocenos div h2 {
+    font-size: 20px; }
+  .conocenos div p {
+    font-size: 10px; }
+  .conocenos img {
+    height: 275px;
+    width: 260px; }
+  .productos {
+    height: 1250px; }
+    .productos .tarjetas {
+      flex-direction: row;
+      height: 10px;
+      width: 100%; }
+      .productos .tarjetas div {
+        margin: 5px; }
+  form {
+    font-size: 5px;
+    flex-direction: row;
+    align-items: start; }
+  .tortas div {
+    flex-direction: row; }
+    .tortas div p {
+      font-size: 10px;
+      padding: 5px; } }
+
+@media screen and (max-width: 325px) {
+  .inicio {
+    width: 100%; }
+  .inicio h2 {
+    font-size: 20px;
+    padding: 5px; }
+  .inicio p {
+    font-size: 15px; }
+  .conocenos div h2 {
+    font-size: 20px; }
+  .conocenos div p {
+    font-size: 10px; }
+  .conocenos img {
+    height: 230px;
+    width: 215px; }
+  .productos {
+    height: 1280px; }
+    .productos .tarjetas {
+      flex-direction: row;
+      height: 10px;
+      width: 100%; }
+      .productos .tarjetas div {
+        margin: 5px; }
+  form {
+    font-size: 5px;
+    flex-direction: row;
+    align-items: start; } }

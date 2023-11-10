@@ -1,0 +1,25 @@
+/*---Index---*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: $color-darkgrey;
+    transition: transform 0.3s ease;
+
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+        font-weight: 700;
+        color: $color-white;
+
+        span {
+            color: $color-black;
+        }
+    }
+    ul{
+            &:hover {
+                transform: scale(1.05);
+            }
+    }   
+}

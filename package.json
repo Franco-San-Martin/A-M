@@ -1,0 +1,18 @@
+{
+  "name": "programacion-coder",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Franco San Martin Ruiz</h1>\r <h3 align=\"center\">En este proyecto de Coderhouse por ahora lo realice con html y css. Tiene 5 pages html, y por hora solamente dos son responsive. El proyecto esta basado en una ex panaderia y cafeteria, en el cual muestro sus productos</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
