@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Franco San Martin Ruiz</h1>
-<h3 align="center">En este proyecto de Coderhouse por ahora lo realice con html,css y scss. Tiene 5 pages html, y responsive. El proyecto esta basado en una ex panaderia y cafeteria, en el cual muestro sus productos</h3>
+<h3 align="center">En este proyecto de Coderhouse por ahora lo realice con html,css y scss. Tiene 5 pages html, y el proyecto es responsive. El proyecto esta basado en una ex panaderia y cafeteria, en el cual muestro sus productos</h3>
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
