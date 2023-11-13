@@ -299,7 +299,7 @@ p {
     position: relative;
     border: 5px solid #000000; }
     .nosotros-pages .caja-contenedora img {
-      width: 25%;
+      width: 35%;
       height: 350px;
       transition: transform 0.3s ease-in-out; }
     .nosotros-pages .caja-contenedora p {
@@ -320,7 +320,7 @@ p {
     margin: 20px;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    width: 98%;
     border: 2px solid #000000; }
     .nosotros-pages .caja-contenedora-mapa h3 {
       color: #000000;
@@ -376,7 +376,12 @@ footer {
       height: 10px;
       width: 100%; }
       .productos .tarjetas div {
-        margin: 5px; } }
+        margin: 5px; }
+  .nosotros-pages .caja-contenedora img {
+    width: 25%;
+    height: 100%; }
+  .nosotros-pages .caja-contenedora p {
+    font-size: 20px; } }
 
 @media screen and (max-width: 920px) {
   .productos-pages {
@@ -421,7 +426,12 @@ footer {
   .item {
     margin: 5px;
     height: 250px;
-    width: 250px; } }
+    width: 250px; }
+  .nosotros-pages .caja-contenedora {
+    flex-direction: column; }
+    .nosotros-pages .caja-contenedora img {
+      height: 350px;
+      width: 500px; } }
 
 @media screen and (max-width: 720px) {
   .inicio h2 {
@@ -472,7 +482,12 @@ footer {
         margin: 5px; }
   form {
     font-size: 8px;
-    flex-direction: row; } }
+    flex-direction: row; }
+  .nosotros-pages .caja-contenedora img {
+    height: 300px;
+    width: 450px; }
+  .nosotros-pages .caja-contenedora p {
+    font-size: 15px; } }
 
 @media screen and (max-width: 615px) {
   .productos-pages {
@@ -540,4 +555,9 @@ footer {
   form {
     font-size: 5px;
     flex-direction: row;
-    align-items: start; } }
+    align-items: start; }
+  .nosotros-pages .caja-contenedora img {
+    height: 250px;
+    width: 450px; }
+  .nosotros-pages .caja-contenedora p {
+    font-size: 12px; } }

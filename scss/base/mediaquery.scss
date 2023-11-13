@@ -50,6 +50,18 @@
             }
         }
     }
+
+    .nosotros-pages{
+        .caja-contenedora{
+            img{
+                width: 25%;
+                height: 100%;
+        }
+            p{
+                font-size: 20px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 920px) {
@@ -122,7 +134,17 @@
         height: 250px;
         width: 250px;
     }
+    .nosotros-pages{
+        .caja-contenedora{
+            flex-direction: column;
+            img{
+                height: 350px;
+                width: 500px;
+            }
+        }
+    }
 }
+
 
 @media screen and (max-width: 720px) {
     .inicio h2 {
@@ -212,6 +234,18 @@
     form {
         font-size: 8px;
         flex-direction: row;
+    }
+
+    .nosotros-pages{
+        .caja-contenedora{
+            img{
+                height: 300px;
+                width: 450px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
     }
 }
 
@@ -328,5 +362,16 @@
         font-size: 5px;
         flex-direction: row;
         align-items: start;
+    }
+    .nosotros-pages{
+        .caja-contenedora{
+            img{
+                height: 250px;
+                width: 450px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
     }
 }
