@@ -191,6 +191,17 @@
 
 
 
+
+@media screen and (max-width: 615px) {
+    .productos-pages {
+        height: 2650px;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(1, 400px);
+        grid-template-rows: repeat(4, 300px);
+    }
+}
 @media screen and (max-width: 595px) {
     .inicio {
         width: 100%;
@@ -247,16 +258,10 @@
             }
         }
     }
-}
-
-@media screen and (max-width: 615px) {
-    .productos-pages {
-        height: 2650px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(1, 400px);
-        grid-template-rows: repeat(4, 300px);
+    .contacto {
+        h2{
+            font-size: 30px;
+        }
     }
 }
 
@@ -313,6 +318,9 @@
     .contacto {
         max-width: 75%;
         height: 650px;
+        h2{
+            font-size: 25px;
+        }
     }
 }
 

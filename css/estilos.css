@@ -496,6 +496,13 @@ footer {
   .box {
     flex-direction: column; } }
 
+@media screen and (max-width: 615px) {
+  .productos-pages {
+    height: 2650px; }
+  .gallery {
+    grid-template-columns: repeat(1, 400px);
+    grid-template-rows: repeat(4, 300px); } }
+
 @media screen and (max-width: 595px) {
   .inicio {
     width: 100%; }
@@ -525,14 +532,9 @@ footer {
     height: 300px;
     width: 450px; }
   .nosotros-pages .caja-contenedora p {
-    font-size: 15px; } }
-
-@media screen and (max-width: 615px) {
-  .productos-pages {
-    height: 2650px; }
-  .gallery {
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(4, 300px); } }
+    font-size: 15px; }
+  .contacto h2 {
+    font-size: 30px; } }
 
 @media screen and (max-width: 425px) {
   .inicio {
@@ -564,7 +566,9 @@ footer {
       padding: 5px; }
   .contacto {
     max-width: 75%;
-    height: 650px; } }
+    height: 650px; }
+    .contacto h2 {
+      font-size: 25px; } }
 
 @media screen and (max-width: 325px) {
   .inicio {
