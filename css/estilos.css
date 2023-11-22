@@ -328,6 +328,44 @@ p {
       padding: 10px;
       flex: 1; }
 
+/*----Contacto---*/
+.contacto {
+  max-width: 75%;
+  height: 750px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url("../img/fondo-tortas.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .contacto h2 {
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 40px;
+    text-align: center; }
+  .contacto form {
+    display: grid;
+    gap: 15px; }
+    .contacto form label {
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: bold; }
+    .contacto form input,
+    .contacto form textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box; }
+    .contacto form button {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 25px;
+      cursor: pointer; }
+
 /*---Index---*/
 footer {
   display: flex;
@@ -519,15 +557,14 @@ footer {
       width: 100%; }
       .productos .tarjetas div {
         margin: 5px; }
-  form {
-    font-size: 5px;
-    flex-direction: row;
-    align-items: start; }
   .tortas div {
     flex-direction: row; }
     .tortas div p {
       font-size: 10px;
-      padding: 5px; } }
+      padding: 5px; }
+  .contacto {
+    max-width: 75%;
+    height: 650px; } }
 
 @media screen and (max-width: 325px) {
   .inicio {

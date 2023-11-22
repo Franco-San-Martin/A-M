@@ -308,11 +308,13 @@ p {
 .nosotros-pages {
     text-align: center;
     background-color: $color-white;
+
     h2 {
         color: $color-white;
         background-color: $color-black;
         font-size: 40px;
     }
+
     .caja-contenedora {
         display: flex;
         flex-direction: row;
@@ -324,11 +326,13 @@ p {
         overflow: hidden;
         position: relative;
         border: 5px solid $color-black;
+
         img {
             width: 35%;
             height: 350px;
             transition: transform 0.3s ease-in-out;
         }
+
         p {
             color: $color-white;
             background-color: $color-black;
@@ -336,16 +340,19 @@ p {
             flex: 1;
             font-size: 25px;
         }
+
         &:hover {
             img {
                 transform: scale(1.1);
             }
+
             .info-btn {
                 background-color: darken($color-darkgrey, 10%);
             }
         }
     }
-    .caja-contenedora-mapa{
+
+    .caja-contenedora-mapa {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -355,6 +362,7 @@ p {
         position: relative;
         width: 98%;
         border: 2px solid $color-black;
+
         h3 {
             color: $color-black;
             background-color: $color-darkgrey;
@@ -365,3 +373,51 @@ p {
 }
 
 
+/*----Contacto---*/
+.contacto {
+    max-width: 75%;
+    height: 750px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("../img/fondo-tortas.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        color: $color-white;
+        background-color: $color-black;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    form {
+        display: grid;
+        gap: 15px;
+
+        label {
+            color: $color-white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: $color-black;
+            color: $color-white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+}
