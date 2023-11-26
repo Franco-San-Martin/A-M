@@ -142,6 +142,12 @@
                 width: 500px;
             }
         }
+        .caja-contenedora-mapa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 95%;
+        }
     }
 }
 
@@ -181,7 +187,14 @@
     form {
         font-size: 10px;
     }
+
+    .nosotros-pages{
+        .caja-contenedora-mapa {
+            width: 95%;
+        }
+    }
 }
+
 
 @media screen and (max-width: 650px){
     .box{
@@ -293,7 +306,7 @@
     }
 
     .productos {
-        height: 1250px;
+        height: 1350px;
 
         .tarjetas {
             flex-direction: row;
@@ -320,6 +333,11 @@
         height: 650px;
         h2{
             font-size: 25px;
+        }
+    }
+    .nosotros-pages{
+        .caja-contenedora-mapa {
+            width: 90%;
         }
     }
 }

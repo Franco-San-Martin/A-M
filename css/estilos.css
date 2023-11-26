@@ -469,7 +469,12 @@ footer {
     flex-direction: column; }
     .nosotros-pages .caja-contenedora img {
       height: 350px;
-      width: 500px; } }
+      width: 500px; }
+  .nosotros-pages .caja-contenedora-mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%; } }
 
 @media screen and (max-width: 720px) {
   .inicio h2 {
@@ -490,7 +495,9 @@ footer {
       .productos .tarjetas div {
         margin: 5px; }
   form {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .nosotros-pages .caja-contenedora-mapa {
+    width: 95%; } }
 
 @media screen and (max-width: 650px) {
   .box {
@@ -552,7 +559,7 @@ footer {
     height: 275px;
     width: 260px; }
   .productos {
-    height: 1250px; }
+    height: 1350px; }
     .productos .tarjetas {
       flex-direction: row;
       height: 10px;
@@ -568,7 +575,9 @@ footer {
     max-width: 75%;
     height: 650px; }
     .contacto h2 {
-      font-size: 25px; } }
+      font-size: 25px; }
+  .nosotros-pages .caja-contenedora-mapa {
+    width: 90%; } }
 
 @media screen and (max-width: 325px) {
   .inicio {
